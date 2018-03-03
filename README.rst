@@ -1,6 +1,9 @@
 rjs
 ===
 
+.. image:: https://travis-ci.org/appstore-zencore/rjs.svg?branch=master
+    :target: https://travis-ci.org/appstore-zencore/rjs
+
 Reids json storage.
 
 Install
