@@ -14,6 +14,7 @@ Class & Methods
 -----
 
 1. rjs.JsonStorage
+
    a. update
    b. get
    c. delete
