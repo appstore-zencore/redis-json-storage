@@ -1,2 +1,0 @@
-# rjs
-Reids json storage.
