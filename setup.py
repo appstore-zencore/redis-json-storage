@@ -12,7 +12,7 @@ requires = [
 
 setup(
     name="rjs",
-    version="0.1.1",
+    version="0.1.2",
     description="Redis json stroage.",
     long_description=long_description,
     url="https://github.com/appstore-zencore/rjs",
