@@ -12,14 +12,15 @@ class JsonStorage(object):
         key = self.prefix + key
         return key
 
-    def update(self, key, data, expire=None):
-        mapping = {}
-        for k, v in data.items():
-            mapping[k] = json.dumps(v)
-        key = self.make_key(key)
-        self.connection.hmset(key, mapping)
+    def update(self, key, data=None, expire=None):
+        if data:
+            mapping = {}
+            for k, v in data.items():
+                mapping[k] = json.dumps(v)
+            key = self.make_key(key)
+            self.connection.hmset(key, mapping)
         if expire:
-            self.connection.expire(expire)
+            self.connection.expire(key, expire)
 
     def get(self, key):
         key = self.make_key(key)
