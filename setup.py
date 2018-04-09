@@ -14,7 +14,7 @@ requires = [
 
 setup(
     name="reids-json-storage",
-    version="0.1.3",
+    version="0.2.0",
     description="Redis json stroage.",
     long_description=long_description,
     url="https://github.com/appstore-zencore/redis-json-storage",
