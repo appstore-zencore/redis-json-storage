@@ -1,8 +1,8 @@
 redis-json-storage
 ==================
 
-.. image:: https://travis-ci.org/appstore-zencore/rjs.svg?branch=master
-    :target: https://travis-ci.org/appstore-zencore/rjs
+.. image:: https://travis-ci.org/appstore-zencore/redis-json-storage.svg?branch=master
+    :target: https://travis-ci.org/appstore-zencore/redis-json-storage
 
 Reids json storage. Store json data as hashmap in redis.
 
