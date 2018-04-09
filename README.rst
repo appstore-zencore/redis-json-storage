@@ -1,22 +1,22 @@
-rjs
-===
+redis-json-storage
+==================
 
 .. image:: https://travis-ci.org/appstore-zencore/rjs.svg?branch=master
     :target: https://travis-ci.org/appstore-zencore/rjs
 
-Reids json storage.
+Reids json storage. Store json data as hashmap in redis.
 
 Install
 -------
 
 ::
 
-    pip install rjs
+    pip install redis-json-storage
 
 Class & Methods
 -----
 
-1. rjs.JsonStorage
+1. redis_json_storage.JsonStorage
 
    a. update
    b. get
@@ -29,7 +29,7 @@ Example
 
 ::
 
-    from rjs import JsonStorage
+    from redis_json_storage import JsonStorage
 
     connection = make_redis_connect(config)
     storage = JsonStorage(connection)

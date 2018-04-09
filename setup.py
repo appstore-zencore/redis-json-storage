@@ -1,4 +1,5 @@
 import os
+from io import open
 from setuptools import setup
 from setuptools import find_packages
 
@@ -8,14 +9,15 @@ with open(os.path.join(here, 'README.rst'), "r", encoding="utf-8") as fobj:
     long_description = fobj.read()
 
 requires = [
+    "redis",
 ]
 
 setup(
-    name="rjs",
+    name="reids-json-storage",
     version="0.1.2",
     description="Redis json stroage.",
     long_description=long_description,
-    url="https://github.com/appstore-zencore/rjs",
+    url="https://github.com/appstore-zencore/redis-json-storage",
     author="zencore",
     author_email="dobetter@zencore.cn",
     license="MIT",
@@ -27,7 +29,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3 :: Only',
     ],
-    keywords=['rjs'],
+    keywords=['reids-json-storage'],
     packages=find_packages("src"),
     package_dir={"": "src"},
     zip_safe=False,
